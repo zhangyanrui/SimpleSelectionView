@@ -15,6 +15,7 @@
 		BEB49E971C73477B001EDD39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB49E951C73477B001EDD39 /* LaunchScreen.storyboard */; };
 		BEB49EA21C73477B001EDD39 /* SimpleSelectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB49EA11C73477B001EDD39 /* SimpleSelectionViewTests.m */; };
 		BEB49EAD1C73477B001EDD39 /* SimpleSelectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB49EAC1C73477B001EDD39 /* SimpleSelectionViewUITests.m */; };
+		BEB49EBC1C734788001EDD39 /* WZSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB49EBB1C734788001EDD39 /* WZSelectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		BEB49EA81C73477B001EDD39 /* SimpleSelectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSelectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB49EAC1C73477B001EDD39 /* SimpleSelectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSelectionViewUITests.m; sourceTree = "<group>"; };
 		BEB49EAE1C73477B001EDD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB49EBA1C734788001EDD39 /* WZSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZSelectionView.h; sourceTree = "<group>"; };
+		BEB49EBB1C734788001EDD39 /* WZSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZSelectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				BEB49E8A1C73477B001EDD39 /* AppDelegate.h */,
 				BEB49E8B1C73477B001EDD39 /* AppDelegate.m */,
+				BEB49EBA1C734788001EDD39 /* WZSelectionView.h */,
+				BEB49EBB1C734788001EDD39 /* WZSelectionView.m */,
 				BEB49E8D1C73477B001EDD39 /* ViewController.h */,
 				BEB49E8E1C73477B001EDD39 /* ViewController.m */,
 				BEB49E901C73477B001EDD39 /* Main.storyboard */,
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB49E8F1C73477B001EDD39 /* ViewController.m in Sources */,
+				BEB49EBC1C734788001EDD39 /* WZSelectionView.m in Sources */,
 				BEB49E8C1C73477B001EDD39 /* AppDelegate.m in Sources */,
 				BEB49E891C73477B001EDD39 /* main.m in Sources */,
 			);
