@@ -219,17 +219,19 @@ static NSString *const kSelectionViewShouldDismissKey = @"SelectionViewShouldDis
 
 #pragma mark  - Public Method
 
-+ (void)showWithItemsBlock:(void (^)(id <WZSelectionItemsProtocol> item))itemsBlock selectedBlock:(void (^)(NSInteger))selectedBlock{
++ (void)showWithItemsBlock:(ITtemsBlock)itemsBlock selectedBlock:(SelectedTodoBlock)selectedBlock{
  
     WZSelectionView *selectionView = [[WZSelectionView alloc] initWithFrame:CGRectZero];
     [selectionView showWithItemsBlock:itemsBlock selectedBlock:selectedBlock];
     
 }
 
-- (void)showWithItemsBlock:(void (^)(id <WZSelectionItemsProtocol> item))itemsBlock selectedBlock:(void (^)(NSInteger))selectedBlock{
+- (void)showWithItemsBlock:(ITtemsBlock)itemsBlock selectedBlock:(SelectedTodoBlock)selectedBlock{
 
     self.seletedBlock = selectedBlock;
     itemsBlock(self.items);
+    
+    NSAssert(self.items.count>0, @"You must implement the protcol With method - (void)addItemWithLabelText: imageName: shouldDismiss:In ITtemsBlock");
     
     CGFloat tableViewHeight = (self.items.count + 1) * kSelectionCellHeight;
     
