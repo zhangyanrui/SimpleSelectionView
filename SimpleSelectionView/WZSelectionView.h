@@ -18,8 +18,11 @@
 
 @end
 
+typedef void(^ITtemsBlock)(id <WZSelectionItemsProtocol> items);
+typedef void(^SelectedTodoBlock)(NSInteger selectedTag);
+
 @interface WZSelectionView : UIView
 
-+ (void)showWithItemsBlock:(void (^)(id <WZSelectionItemsProtocol> items))itemsBlock selectedBlock:(void (^)(NSInteger selectedTag))selectedBlock;
++ (void)showWithItemsBlock:(ITtemsBlock)itemsBlock selectedBlock:(SelectedTodoBlock)selectedBlock;
 
 @end
